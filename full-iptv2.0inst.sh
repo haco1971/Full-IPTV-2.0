@@ -1,8 +1,8 @@
 #!/bin/bash
 #
 # FullIPTV 2.0 / Installer 1.0
-# edited by maxdata755
-# maxdata755.online
+# edited by haco1971
+# negmtv.altervista.org
 #
 apt-get update && apt-get upgrade -y
 #
@@ -170,12 +170,12 @@ function writeConfig {
 
 function upgradeFiles {
 	if [ "$ISCMS" = "1" ]; then
-		wget -O /tmp/fulliptv.tgz http://cdn.fulliptv.com/fulliptv-cms.tgz >> /dev/null 2>&1
+		wget -O /tmp/fulliptv.tgz http://iptvebsat.no-ip.net/test/fulliptv-cms.tgz >> /dev/null 2>&1
 		tar xzvf /tmp/fulliptv.tgz -C /opt >> /dev/null 2>&1
 		rm -rf /tmp/fulliptv.tgz >> /dev/null 2>&1
 	fi
 	if [ "$ISSTREAMER" = "1" ]; then
-		wget -O /tmp/fulliptv.tgz http://cdn.fulliptv.com/fulliptv-streamer.tgz >> /dev/null 2>&1
+		wget -O /tmp/fulliptv.tgz http://iptvebsat.no-ip.net/test/fulliptv-streamer.tgz >> /dev/null 2>&1
 		tar xzvf /tmp/fulliptv.tgz -C /opt >> /dev/null 2>&1
 		rm -rf /tmp/fulliptv.tgz >> /dev/null 2>&1
 	fi
@@ -448,7 +448,7 @@ rm /root/full-iptv2.0inst.sh
 echo " "
 echo "####################################################################################"
 echo " "
-echo "FullIPTV 2.0 edited by maxdata755...have fun"
+echo "FullIPTV 2.0 edited by haco1971...have fun"
 echo " "
 echo "Installation abgeschlossen..."
 echo " "
